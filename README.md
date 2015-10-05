@@ -1,4 +1,4 @@
 
 html version of my redesigned portfolio website
 
-[portfoliowebsite] (http://aimeesands.github.io/portfoliowebsite/portfolio.html)
+[portfoliowebsite] (https://github.com/aimeesands/portfoliowebsite/blob/master/portfolio.html)
