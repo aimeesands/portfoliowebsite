@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Aimee Sands Design Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+   <script type="text/javascript" src="js/map.js"></script>
+<script>
+
+   $(function() {
+$('a[href*=#]:not([href=#])').click(function() {
+ if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+   var target = $(this.hash);
+   target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+   if (target.length) {
+     $('html,body').animate({
+       scrollTop: target.offset().top
+     }, 1000);
+     return false;
+   }
+ }
+});
+});
+
+   document.addEventListener("DOMContentLoaded", function() {
+var links = document.getElementsByTagName("A");
+for(var i=0; i < links.length; i++) {
+ if(!links[i].hash) continue;
+ if(links[i].origin + links[i].pathname != self.location.href) continue;
+ (function(anchorPoint) {
+   links[i].addEventListener("click", function(e) {
+     anchorPoint.scrollIntoView(true);
+     e.preventDefault();
+   }, false);
+ })(document.getElementById(links[i].hash.replace(/#/, "")));
+}
+}, false);
+
+
+   </script>
+
+</head>
+
+<body>
+
+<!----- HEADER START--->
+    <header>
+            <div class="content">
+
+
+                        <nav>
+                            <ul>
+                                <li><a href="#main" title="Next Section" >HOME</a></li>
+                                <li><a href="#about" title="Next Section">ABOUT</a></li>
+                                <li><a href="#portfolio" title="Next Section">PORTFOLIO</a></li>
+                                <li><a href="#contactleft" title="Next Section">CONTACT</a></li>
+                            </ul>
+                        </nav>
+            </div>
+    </header>
+<!----- HEADER END--->
+
+
+<section id="main">
+    <div class="content">
+
+    <img src="images/portbg2.png"/>
+
+</section><!--MAIN END
+
+  <!--ABOUTME-->
+
+
+
+        <section id="about">
+
+          <div id="aboutleft">
+
+
+            <h1>A Little Bit About Me</h1>
+            <p>I am a 21 year old interaction designer and student from the Big B, (Belfast, NI). I like to dabble in all shapes and sizes of design and the creative industry, I am currently studying IXD at Ulster University that I am really enjoying as I am constantly learning about new aspects of the industry that I definently see myself being a part of as I continue develope my skills. I have recently taken a shine to videography I find it so much fun and it entertains me for hours! </p>
+            <p>I have many interests such as music and fashion but mostly I enjoy creating new things that hopefully other people will like aswell, I hope this passion shows thoughout my work. I also have a huge passion for travelling, I 100% have the travel bug, I love is to indulge myself within different cultures, experience new things and make lots of memories.</p>
+          </div>
+</section>
+
+<div id="avatarright">
+<img src="images/avatar2.png"/>
+</div>
+
+
+
+
+
+
+      <!--aboutmeEnd-->
+
+
+</body>
+</html>
